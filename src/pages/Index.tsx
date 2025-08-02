@@ -1,4 +1,6 @@
 import React from 'react';
+import { Header } from '@/components/ui/Header';
+import { Footer } from '@/components/ui/Footer';
 import { HeroSection } from '@/components/ui/HeroSection';
 import { ProductCard } from '@/components/ui/ProductCard';
 import { Carousel } from '@/components/ui/Carousel';
@@ -50,6 +52,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Header />
+      
       {/* Hero Section */}
       <HeroSection />
       
@@ -70,6 +74,8 @@ const Index = () => {
         </Carousel>
       </section>
 
+      <Footer />
+      
       {/* WhatsApp Chat Button */}
       <WhatsAppChatButton />
     </div>
